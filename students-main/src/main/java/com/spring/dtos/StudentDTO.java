@@ -11,7 +11,8 @@ public class StudentDTO {
     private int courseEndYear;
     private List<SubjectDTO> subjects;
     // Constructor
-    public StudentDTO(String name, int age, String gender, String dob, String course, int courseStartYear, int courseEndYear, List<SubjectDTO> subjects) {
+    public StudentDTO(int id,String name, int age, String gender, String dob, String course, int courseStartYear, int courseEndYear, List<SubjectDTO> subjects) {
+        this.id = id;
         this.name = name;
         this.age = age;
         this.gender = gender;

@@ -21,8 +21,9 @@ public class Students {
     private List<Subject> subjects=new ArrayList<>();
     public Students() {
     }
-    public Students(String name, int age, String gender, String dob, String course, int courseStartYear,
+    public Students(int id,String name, int age, String gender, String dob, String course, int courseStartYear,
             int courseEndYear, List<Subject> subjects) {
+        this.id = id;
         this.name = name;
         this.age = age;
         this.gender = gender;

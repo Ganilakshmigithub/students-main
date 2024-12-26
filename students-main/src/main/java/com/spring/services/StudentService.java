@@ -22,7 +22,7 @@ public class StudentService {
         List<SubjectDTO> subjectDTOs = student.getSubjects().stream()
                 .map(subject -> new SubjectDTO(subject.getSubId(), subject.getName(), subject.getMarks()))
                 .collect(Collectors.toList());
-        return new StudentDTO(student.getName(), student.getAge(), student.getGender(),
+        return new StudentDTO(student.getId(),student.getName(), student.getAge(), student.getGender(),
                 student.getDob(), student.getCourse(), student.getCourseStartYear(), student.getCourseEndYear(), subjectDTOs);
     }
     // Add a new student

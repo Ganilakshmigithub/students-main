@@ -17,7 +17,7 @@ public class StudentClientService {
     // Fetch students by name
     public List<StudentDTO> getStudentByName(String name) {
         String url = STUDENT_SERVICE_URL + "/name/" + name;
-        List<StudentDTO> students = restTemplate.getForObject(url, List.class);
+        List<StudentDTO> students = restTemplate.getForObject(url, List.class);   //get for object is getmapping
         return students;
     }
     // Fetch students by age
