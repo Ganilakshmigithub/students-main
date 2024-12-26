@@ -1,12 +1,8 @@
 package com.spring.controllers;
-import com.spring.dtos.StudentDTO;
-import com.spring.dtos.SubjectDTO;
 import com.spring.entities.Students;
 import com.spring.services.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.*;
-import java.util.List;
 @RestController
 @RequestMapping("/students")
 public class StudentController {
